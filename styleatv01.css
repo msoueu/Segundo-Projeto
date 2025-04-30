@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.cabeçalho {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+}
+
+/* Menu */
+.menu {
+    flex: 2;
+    text-align: center;
+}
+
+.menu a {
+    color: pink;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+/* Barra de pesquisa */
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ícones Sociais */
+.sociais {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociais button {
+    width: 35px;
+    height: 35px;
+    background-image: linear-gradient(45deg, #dd6ea6, #9a839b);
+    border: none;
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+h1 {
+    color: #920e50;
+    text-align: center;
+}
+.conteudo {
+    background-color: #dd6ea6;
+}
+body {
+    background-color: #ebb8d1;
+    text-align: center;
+
+}
+.sla {
+    font-family: 'Arial', sans-serif; /* ou outra fonte */
+    color: #d94f91; /* rosa, por exemplo */
+    font-size: 16px;
+    font-weight: 700;
+}
+input[type='text'] {
+    width: 700px;
+    font-size: 16px;
+    border: 2px solid rgb(175, 97, 136);
+}
+input[type='button'] {
+    border: 2px solid rgb(175, 97, 136);
+    font-size: 16px;
+    background-color: #d94f91;
+    color: #ffffff;
+    font-weight: 700;
+    width: 100px;
+    font-family: 'Arial', sans-serif;
+    padding: 2px;
+    
+}
+input[type="button"]:active {
+    background-color: red; /* Muda a cor quando clicado */
+    transform: scale(0.98); /* Efeito de "apertar" o botão */
+}
+

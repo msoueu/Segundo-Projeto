@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro projeto</title>
+    <link rel="stylesheet" href="styleatv01.css">
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <div class="logo">
+                <img src="https://thumbs.dreamstime.com/b/modelo-de-desenho-do-log%C3%B3tipo-%C3%ADcone-flor-da-sakura-vetor-181729691.jpg" width="100" alt="">
+            </div>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+            </nav>
+            <form class="search-container">
+                <input type="text" id="search-bar" placeholder="Search">
+            </form>
+            
+            <div class="sociais">
+                <button><i class="fa-solid fa-face-smile"></i></button>
+                <button><i class="fa-solid fa-heart"></i></button>
+                <button><i class="fa-solid fa-bomb"></i></button>
+                <button><i class="fa-solid fa-truck"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo">
+            <article>
+                <h1>Where are you visiting us from? We want to welcome you like you're right next door!</h1> 
+            </article>
+        </div>
+        <div class="sla"><input type="text" name="txtvel" id="txtvel">
+        </div>
+        <div class="send">
+            <input type="button" value="send" onmouseover="sair()" onclick="verifique()">
+        </div>
+        <div id="res"></div>
+    </main>
+    <script src="https://kit.fontawesome.com/2265f6b268.js" crossorigin="anonymous">
+    </script>
+    <script>
+        
+    </script>
+    <script>
+        function verifique (){
+            var txtvel = window.document.querySelector('input#txtvel');
+            var res = window.document.querySelector('div#res');
+            var país = String(txtvel.value);
+            if (país.toLowerCase() === 'brasil') {
+                res.innerHTML = `<p>Estou vendo que voce é um brasileiro, bem vindo ao nosso site :D</p>`
+                res.style.background = 'green'
+                res.style.color = 'yellow'
+            }
+            else {
+                res.innerHTML = `<p>Hey foreigner, welcome to our website!</p>`
+                res.style.color = '#681840'
+                res.style.background = 'pink'
+            }
+        }
+    </script>
+    
+</body>
+</html>
